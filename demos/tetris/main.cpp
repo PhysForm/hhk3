@@ -6,7 +6,7 @@
 //320x520 -> 16x26 (20px x 20px) -> 12x22
 
 APP_NAME("Tetris")
-APP_DESCRIPTION("A simple implementation of the game Tetris.")
+APP_DESCRIPTION("Use Keypad to Rotate the Blocks")
 APP_AUTHOR("De_Coder")
 APP_VERSION("1.0.0")
 
@@ -116,7 +116,7 @@ int main() {
 	
 	
 	Debug_SetCursorPosition(0, 0);
-	Debug_PrintString("just push some buttons. :)", false);
+	Debug_PrintString("Use Keypad to Rotate/Speed up Block", false);
 	LCD_Refresh();
 	
 	for(int i = 0; i < 4; i++){		//get some keycodes to generate a seed for the random() function
